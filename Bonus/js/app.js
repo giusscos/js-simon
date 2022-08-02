@@ -38,7 +38,7 @@ for (let i = 0; i < img.length; i++){
 
 // Evento freccia destra
 arrowRightElement.addEventListener('click', function() {
-    clearInterval(slideOn());
+    clearInterval(slideOn);
 
     slideActiveElement = slideArrayElement[counter];
     slideActiveElement.classList.remove('active');
@@ -54,7 +54,7 @@ arrowRightElement.addEventListener('click', function() {
 
 // Evento freccia sinistra
 arrowLeftElement.addEventListener('click', function() {
-    clearInterval(slideOn());
+    clearInterval(slideOn);
 
     slideActiveElement = slideArrayElement[counter];
     slideActiveElement.classList.remove('active');
