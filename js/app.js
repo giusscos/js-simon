@@ -7,7 +7,10 @@ function genIntNum(min, max){
 function genSimonArray(){
     const simonArray = []
     for(let i=0; i < 5; i++){
-        simonArray.push(genIntNum(1, 100));
+        const num = genIntNum(1, 100);
+        if(!simonArray.includes(n)){
+            simonArray.push(n);
+        }
     }
     return simonArray
 }
@@ -15,7 +18,7 @@ function genSimonArray(){
 function getNumPlayer(){
     const playerArray = []
     for(let i = 0; i < 5; i++){
-        playerArray.push(parseInt(prompt('Inserisci il numero >> ' + (i+1) + ';')));
+        playerArray.push(parseInt(prompt('Inserisci il numero >> ' + (i + 1) + ';')));
     }
     return playerArray
 }
