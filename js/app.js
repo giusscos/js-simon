@@ -36,7 +36,7 @@ const simonArray = genSimonArray();
 alert(simonArray);
 
 const playerArray = getNumPlayer();
-setTimeout(playerArray, 5000);
+setTimeout(playerArray, 30000);
 
 for(let i = 0; i < 5; i++){
     matchSimonNum(simonArray[i], playerArray[i]);
