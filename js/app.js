@@ -8,8 +8,8 @@ function genSimonArray(){
     const simonArray = []
     for(let i=0; i < 5; i++){
         const num = genIntNum(1, 100);
-        if(!simonArray.includes(n)){
-            simonArray.push(n);
+        if(!simonArray.includes(num)){
+            simonArray.push(num);
         }
     }
     return simonArray
