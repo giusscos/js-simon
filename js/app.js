@@ -23,24 +23,18 @@ function getNumPlayer(){
     return playerArray
 }
 
-function matchSimonNum(numSimon, numPlayer){
-    if(numSimon === numPlayer){
-        console.log('Hai preso il >> ', numPlayer);
-        return numPlayer;
-    }
-    console.log('Hai dimenticato il >> ', numSimon);
-    return numSimon;
-}
-
 const simonArray = genSimonArray();
 alert(simonArray);
 
 const playerArray = getNumPlayer();
 setTimeout(playerArray, 30000);
 
+const matchArray = []
+
 for(let i = 0; i < 5; i++){
-    matchSimonNum(simonArray[i], playerArray[i]);
+    if(simonArray.includes(playerArray[i])){
+        matchArray.push(playerArray[i]);
+    }
 }
 
-
-// console.log('Simon >> ', genSimonArray(), ' || Player >> ', getNumPlayer(), ';')
+console.log("Hai indovinato i seguenti numeri >> ", matchArray);
